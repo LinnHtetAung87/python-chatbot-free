@@ -8,6 +8,7 @@ load_dotenv()
 
 # Get the API key from the environment variable
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+print("ENV FILE FOUND:", os.path.exists(".env"))
 
 if not OPENROUTER_API_KEY:
     print("API Key is missing. Please check your .env file.")
